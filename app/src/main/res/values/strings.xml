@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Min Yu Resume</string>
-    <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_settings">Settings</string>
+    <string name="stringName">Min Yu</string>
+    <string name="stringPhoneEmail">+82 10 9917 0524\niam.minhhh@gmail.com\nlinkedin.com/in/min-yu</string>
+    <string name="stringHighlightsList">● Fluent in Korean and English\n● Smart\n● Fast learner\n● Test</string>
+    <string name="highlights">HIGHLIGHTS</string>
+    <string name="references">REFERENCES</string>
 </resources>

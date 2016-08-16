@@ -38,12 +38,79 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end|bottom"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:src="@android:drawable/ic_dialog_email" />-->
+
+
+<!--tab design draft-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:id="@+id/imageMinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_home"
+            android:layout_weight="1"
+            android:contentDescription="home"/>
+        <ImageView
+            android:id="@+id/imageWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@mipmap/ic_study"
+            android:layout_weight="1"
+            android:contentDescription="work"/>
+
+        <ImageView
+            android:id="@+id/imageStudy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageWork"
+            android:layout_toEndOf="@+id/imageWork"
+            android:src="@mipmap/ic_work"
+            android:layout_weight="1"
+            android:contentDescription="study"/>
+
+        <ImageView
+            android:id="@+id/imageSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageStudy"
+            android:layout_toEndOf="@+id/imageStudy"
+            android:src="@mipmap/ic_skill"
+            android:layout_weight="1"
+            android:contentDescription="skill"/>
+
+        <ImageView
+            android:id="@+id/imageReference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageSkill"
+            android:layout_toEndOf="@+id/imageSkill"
+            android:src="@mipmap/ic_reference"
+            android:layout_weight="1"
+            android:contentDescription="reference"/>
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>
