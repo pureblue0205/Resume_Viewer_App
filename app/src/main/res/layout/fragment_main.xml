@@ -84,25 +84,5 @@
         android:src="@mipmap/ic_phone"
         android:contentDescription="phone"/>
 
-    <ImageView
-        android:id="@+id/imageEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_below="@+id/imagePhone"
-        android:layout_toEndOf="@+id/face"
-        android:layout_toRightOf="@+id/face"
-        android:src="@mipmap/ic_Email"
-        android:contentDescription="email"/>
-
-    <ImageView
-        android:id="@+id/imageLinkedIn"
-        android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_below="@+id/imageEmail"
-        android:layout_toEndOf="@+id/face"
-        android:layout_toRightOf="@+id/face"
-        android:src="@mipmap/ic_LinkedIn"
-        android:contentDescription="LinkedIn"/>
-
 
 </RelativeLayout>
