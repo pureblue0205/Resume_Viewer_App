@@ -1,5 +1,6 @@
 package a16sapi.aidle.minyuresume;
 
+import android.graphics.drawable.Drawable;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        
         tabLayout.setupWithViewPager(mViewPager);
 
         /**FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -139,6 +141,19 @@ public class MainActivity extends AppCompatActivity {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
             return PlaceholderFragment.newInstance(position + 1);
+
+//Jin - tried to show different activity in each tab... failed :(
+//            switch (position) {
+//                case 0:
+//                    MainActivity tab1 = new MainActivity();
+//                    return tab1;
+//                case 4:
+//                    ReferenceActivity tab5 = new ReferenceActivity();
+//                    return tab5;
+//                default:
+//                    return null;
+//            }
+
         }
 
         @Override
@@ -146,6 +161,9 @@ public class MainActivity extends AppCompatActivity {
             // Show 3 total pages.
             return 5;
         }
+
+        Drawable myDrawable;
+        String title;
 
         @Override
         public CharSequence getPageTitle(int position) {

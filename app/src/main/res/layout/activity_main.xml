@@ -11,9 +11,42 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:paddingTop="@dimen/appbar_padding_top"
         android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways"-->
+            <!--app:popupTheme="@style/AppTheme.PopupOverlay">-->
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:id="@+id/tabs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fillViewport="false"-->
+            <!--android:layout_gravity="bottom" />-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -24,20 +57,24 @@
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
         </android.support.v7.widget.Toolbar>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_weight="1"
+            />
+
 
         <android.support.design.widget.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fillViewport="false" />
+            android:fillViewport="false"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryLight"/>
 
-    </android.support.design.widget.AppBarLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
 
     <!--<android.support.design.widget.FloatingActionButton-->
         <!--android:id="@+id/fab"-->
@@ -49,69 +86,69 @@
 
 
 <!--tab design draft-->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@color/colorPrimary"
-        android:layout_gravity="bottom">
-        <ImageView
-            android:id="@+id/imageMinh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:src="@mipmap/ic_home"
-            android:layout_weight="1"
-            android:contentDescription="home"/>
-        <ImageView
-            android:id="@+id/imageWork"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:src="@mipmap/ic_study"
-            android:layout_weight="1"
-            android:contentDescription="work"/>
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@color/colorPrimary"-->
+        <!--android:layout_gravity="bottom">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/imageMinh"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:src="@mipmap/ic_home"-->
+            <!--android:layout_weight="1"-->
+            <!--android:contentDescription="home"/>-->
+        <!--<ImageView-->
+            <!--android:id="@+id/imageWork"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:src="@mipmap/ic_study"-->
+            <!--android:layout_weight="1"-->
+            <!--android:contentDescription="work"/>-->
 
-        <ImageView
-            android:id="@+id/imageStudy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageWork"
-            android:layout_toEndOf="@+id/imageWork"
-            android:src="@mipmap/ic_work"
-            android:layout_weight="1"
-            android:contentDescription="study"/>
+        <!--<ImageView-->
+            <!--android:id="@+id/imageStudy"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_toRightOf="@+id/imageWork"-->
+            <!--android:layout_toEndOf="@+id/imageWork"-->
+            <!--android:src="@mipmap/ic_work"-->
+            <!--android:layout_weight="1"-->
+            <!--android:contentDescription="study"/>-->
 
-        <ImageView
-            android:id="@+id/imageSkill"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageStudy"
-            android:layout_toEndOf="@+id/imageStudy"
-            android:src="@mipmap/ic_skill"
-            android:layout_weight="1"
-            android:contentDescription="skill"/>
+        <!--<ImageView-->
+            <!--android:id="@+id/imageSkill"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_toRightOf="@+id/imageStudy"-->
+            <!--android:layout_toEndOf="@+id/imageStudy"-->
+            <!--android:src="@mipmap/ic_skill"-->
+            <!--android:layout_weight="1"-->
+            <!--android:contentDescription="skill"/>-->
 
-        <ImageView
-            android:id="@+id/imageReference"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/imageSkill"
-            android:layout_toEndOf="@+id/imageSkill"
-            android:src="@mipmap/ic_reference"
-            android:layout_weight="1"
-            android:contentDescription="reference"/>
+        <!--<ImageView-->
+            <!--android:id="@+id/imageReference"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_toRightOf="@+id/imageSkill"-->
+            <!--android:layout_toEndOf="@+id/imageSkill"-->
+            <!--android:src="@mipmap/ic_reference"-->
+            <!--android:layout_weight="1"-->
+            <!--android:contentDescription="reference"/>-->
 
-    </LinearLayout>
+    <!--</LinearLayout>-->
 
 </android.support.design.widget.CoordinatorLayout>

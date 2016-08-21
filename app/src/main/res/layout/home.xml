@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/face"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/linkedinlayout"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toLeftOf="@+id/highlightTitle"-->
+        <!--android:layout_toStartOf="@+id/highlightTitle"-->
+        <!--android:contentDescription="face"-->
+        <!--android:minWidth="50dp"-->
+        <!--android:src="@mipmap/ic_reference1" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_toEndOf="@+id/face"-->
+        <!--android:layout_toRightOf="@+id/face"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="@string/stringName"-->
+        <!--android:textSize="48sp" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/phonelayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/name"-->
+        <!--android:layout_toRightOf="@+id/face">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imagePhone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:contentDescription="phone"-->
+            <!--android:src="@mipmap/ic_phone" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/phone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="start"-->
+            <!--android:text="@string/stringPhone" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/emaillayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/phonelayout"-->
+        <!--android:layout_toRightOf="@+id/face">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageEmail"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:contentDescription="email"-->
+            <!--android:src="@mipmap/ic_email" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/email"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="start"-->
+            <!--android:text="iam.minhhh@gmail.com" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linkedinlayout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/emaillayout"-->
+        <!--android:layout_toRightOf="@+id/face">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imagelinkedin"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:contentDescription="linkedin"-->
+            <!--android:src="@mipmap/ic_linkedin" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/linkedin"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="start"-->
+            <!--android:text="linkedin.com/in/min-yu" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/highlightTitle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/linkedinlayout"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:text="@string/highlights"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="28sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/highlightTitle"-->
+        <!--android:foregroundGravity="center_horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="26dp"-->
+            <!--android:text="@string/stringHighlightsList"-->
+            <!--android:textSize="15sp" />-->
+    <!--</ScrollView>-->
+
+</RelativeLayout>
