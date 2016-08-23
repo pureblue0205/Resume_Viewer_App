@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    private TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         
         tabLayout.setupWithViewPager(mViewPager);
+
+        final TabLayout.Tab home = tabLayout.newTab();
+        tabLayout.addTab(tabLayout.newTab().setIcon(R.mipmap.ic_launcher));
 
         /**FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         *fab.setOnClickListener(new View.OnClickListener() {
