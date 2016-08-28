@@ -82,7 +82,7 @@
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="100dp"
+                    android:layout_marginTop="60dp"
                     android:layout_weight="1"
                     android:src="@mipmap/ic_reference1" />
 
@@ -90,7 +90,7 @@
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="100dp"
+                    android:layout_marginTop="60dp"
                     android:layout_weight="1"
                     android:src="@mipmap/ic_reference1" />
 
