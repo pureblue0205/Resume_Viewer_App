@@ -1,42 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d9d2e9">
+    android:background="#d9d2e9"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:gravity="center_horizontal"
-        android:text="EXPERIENCES"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="28sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="Canada Volunteer Association"
-        android:textStyle="bold"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2015-2016"
-        android:layout_gravity="right"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_reference1" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="● Cleaning event hall"
-        android:textStyle="bold"
-        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="WORK EXPERIENCES"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:src="@mipmap/ic_reference1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Consultant of Education for new Leadership"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Hyundai Motor group's administrators"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Hures Consultin Group (Seoul, Korea)\n2015 to Present"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="•	Assistant all over 3 weeks trainings for Hyundai Motor group’s administrators \n\n
+•	To make sure All the process of education for new leadership goes well with helping professors’ lectures and monitoring attended administrators attitudes\n\n
+•	Solve complaints happened during the new leadership education session\n\n
+•	Checking attendance, gathering trainees’ daily assignments and also converting the files to merge\n\n
+•	Prepare daily tests to estimate achievements, proctor exams and mark the paper\n\n
+•	Assess all each trainees’ attitude for the curriculum, achievement rate of daily assignment and quality of presentation skills\n\n
+•	Report daily records of all around the training to Hyundai Motor group\n\n
+•	Register professors’ marks and comments on Daily report, assessment of Assignment, studying evaluation, presentation evaluation\n\n
+•	Writing up individual reports including all activities, assessments, attendance history, rate of achievement about the training, attitude, business skills, personal potential
+"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>
