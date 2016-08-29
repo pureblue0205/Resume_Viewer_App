@@ -39,8 +39,4 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return null;
         }
     }
-    /*@Override
-    public CharSequence getPageTitle(int position) {
-        return tabNames[position];
-    }*/
 }

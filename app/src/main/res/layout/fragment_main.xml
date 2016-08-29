@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/face"
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
@@ -48,30 +48,32 @@
                 android:gravity="center_horizontal">
 
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/imagePhone2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="70dp"
-                    android:contentDescription="linkedin"
+                    android:contentDescription="phone"
                     android:src="@mipmap/ic_phone" />
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/imageEmail2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/imagePhone2"
-                    android:contentDescription="linkedin"
+                    android:contentDescription="email"
                     android:src="@mipmap/ic_email" />
 
 
-                <ImageView
+                <ImageButton
                     android:id="@+id/imagelinkedin2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
                     android:layout_toRightOf="@+id/imageEmail2"
                     android:contentDescription="linkedin"
+                    android:clickable="true"
+                    android:tag = "linkedin.com/in/min-yu"
                     android:src="@mipmap/ic_linkedin" />
             </RelativeLayout>
             <!--Above: option 1 (preferred)-->
@@ -98,6 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:autoLink="phone"
             android:text="@string/stringPhone"
             android:textSize="20dp" />
             </LinearLayout>
@@ -179,4 +182,10 @@
         </LinearLayout>
     </ScrollView>
 
+    <ImageView
+        android:id="@+id/face_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:contentDescription="description_zoom_touch_close" />
 </RelativeLayout>

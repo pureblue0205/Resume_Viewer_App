@@ -77,8 +77,6 @@
             android:background="@color/colorPrimary"
             />
 
-
-
     </LinearLayout>
 
     <!--<android.support.design.widget.FloatingActionButton-->

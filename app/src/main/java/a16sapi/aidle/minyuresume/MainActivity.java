@@ -1,52 +1,29 @@
 package a16sapi.aidle.minyuresume;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerAdapter;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    /**
-     * The {@link PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link FragmentStatePagerAdapter}.
-     */
-    private SectionsPagerAdapter mSectionsPagerAdapter;
-
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
     private ViewPager mViewPager;
     private TabLayout tabLayout;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
     private GoogleApiClient client;
 
     @Override
@@ -63,11 +40,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /**
-         * Create the adapter that will return a fragment for each of the three
-         * primary sections of the activity.
-         */
-
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         SectionsPagerAdapter pagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager(),
@@ -81,10 +53,29 @@ public class MainActivity extends AppCompatActivity {
             tabLayout.getTabAt(i).setIcon(icons[i]);
         }
 
+        /*ImageView img = (ImageView)findViewById(R.id.imagelinkedin2);
+        img.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String url = (String)v.getTag();
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+            }
+        });*/
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
+      /*  findViewById(R.id.imageEmail2).setOnClickListener(new OnClickListener() {
+            public void onClick(View _) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.fromParts("mailto","abc@gmail.com", null));
+                startActivity(i);
+            }
+        });*/
     }
 
     @Override
