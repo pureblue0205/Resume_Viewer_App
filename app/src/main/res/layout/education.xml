@@ -65,8 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
                 android:gravity="center_horizontal"
-                android:src="@mipmap/ic_reference1" />
-            <!--TODO: find black business icon-->
+                android:src="@mipmap/ic_work_black" />
 
             <TextView
                 android:layout_width="match_parent"
