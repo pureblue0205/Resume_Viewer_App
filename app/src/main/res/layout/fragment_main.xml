@@ -49,7 +49,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imagelinkedin2"
+                    android:id="@+id/imagePhone2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="70dp"
@@ -57,23 +57,25 @@
                     android:src="@mipmap/ic_phone" />
 
                 <ImageView
-                    android:id="@+id/imagelinkedin3"
+                    android:id="@+id/imageEmail2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/imagelinkedin2"
+                    android:layout_toRightOf="@+id/imagePhone2"
                     android:contentDescription="linkedin"
                     android:src="@mipmap/ic_email" />
 
 
                 <ImageView
-                    android:id="@+id/imagelinkedin4"
+                    android:id="@+id/imagelinkedin2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
-                    android:layout_toRightOf="@+id/imagelinkedin3"
+                    android:layout_toRightOf="@+id/imageEmail2"
                     android:contentDescription="linkedin"
                     android:src="@mipmap/ic_linkedin" />
             </RelativeLayout>
+            <!--Above: option 1 (preferred)-->
+
             <LinearLayout
             android:id="@+id/phonelayout"
             android:layout_width="match_parent"
@@ -151,6 +153,7 @@
             android:text="linkedin.com/in/min-yu"
             android:textSize="20dp" />
             </LinearLayout>
+            <!--Above: option 2-->
 
 
             <TextView
