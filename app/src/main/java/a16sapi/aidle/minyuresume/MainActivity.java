@@ -74,9 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this);
         mViewPager.setAdapter(pagerAdapter);
 
-
-
-
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
@@ -129,11 +126,5 @@ public class MainActivity extends AppCompatActivity {
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
     }
-
-
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
 
 }
