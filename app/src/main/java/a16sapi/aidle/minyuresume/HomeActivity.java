@@ -20,13 +20,13 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
-        phone = (ImageView) view.findViewById(R.id.phone2);
+        phone = (ImageView) view.findViewById(R.id.imagePhone2);
         phone.setOnClickListener(this);
 
-        email = (ImageView) view.findViewById(R.id.email2);
+        email = (ImageView) view.findViewById(R.id.imageEmail2);
         email.setOnClickListener(this);
 
-        linkedIn = (ImageView) view.findViewById(R.id.linkedin2);
+        linkedIn = (ImageView) view.findViewById(R.id.imageLinkedin2);
         linkedIn.setOnClickListener(this);
         return view;
     }
@@ -34,21 +34,21 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v){
         switch(v.getId()){
-            case R.id.phone2:
+            case R.id.imagePhone2:
                 Intent intent1 = new Intent();
                 intent1.setAction(Intent.ACTION_DIAL);
                 intent1.setData(Uri.fromParts("tel", phoneNumber, null));
                 startActivity(intent1);
                 break;
 
-            case R.id.email2:
+            case R.id.imageEmail2:
                 Intent intent2 = new Intent();
                 intent2.setAction(Intent.ACTION_VIEW);
                 intent2.setData(Uri.fromParts("mailto","iam.minhhh@gmail.com",null));
                 startActivity(intent2);
                 break;
 
-            case R.id.linkedin2:
+            case R.id.imageLinkedin2:
                 Intent intent3 = new Intent();
                 intent3.setAction(Intent.ACTION_VIEW);
                 intent3.addCategory(Intent.CATEGORY_BROWSABLE);
