@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/face"
                 android:layout_width="wrap_content"
                 android:layout_height="280dp"
@@ -48,37 +48,35 @@
                 android:gravity="center_horizontal">
 
 
-                <ImageButton
-                    android:id="@+id/imagePhone2"
+                <ImageView
+                    android:id="@+id/phone2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="70dp"
                     android:contentDescription="phone"
                     android:src="@mipmap/ic_phone" />
 
-                <ImageButton
-                    android:id="@+id/imageEmail2"
+                <ImageView
+                    android:id="@+id/email2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/imagePhone2"
+                    android:layout_toRightOf="@+id/phone2"
                     android:contentDescription="email"
                     android:src="@mipmap/ic_email" />
 
 
-                <ImageButton
-                    android:id="@+id/imagelinkedin2"
+                <ImageView
+                    android:id="@+id/linkedin2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
-                    android:layout_toRightOf="@+id/imageEmail2"
+                    android:layout_toRightOf="@+id/email2"
                     android:contentDescription="linkedin"
-                    android:clickable="true"
-                    android:tag = "linkedin.com/in/min-yu"
                     android:src="@mipmap/ic_linkedin" />
             </RelativeLayout>
             <!--Above: option 1 (preferred)-->
 
-            <LinearLayout
+            <!--<LinearLayout
             android:id="@+id/phonelayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,7 +153,7 @@
             android:gravity="center"
             android:text="linkedin.com/in/min-yu"
             android:textSize="20dp" />
-            </LinearLayout>
+            </LinearLayout>-->
             <!--Above: option 2-->
 
 
@@ -182,10 +180,4 @@
         </LinearLayout>
     </ScrollView>
 
-    <ImageView
-        android:id="@+id/face_expanded"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="invisible"
-        android:contentDescription="description_zoom_touch_close" />
 </RelativeLayout>

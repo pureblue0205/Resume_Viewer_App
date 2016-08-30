@@ -1,26 +1,17 @@
 package a16sapi.aidle.minyuresume;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
-
 import android.support.v4.view.ViewPager;
-import android.widget.ImageView;
-
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
-import java.net.URL;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends AppCompatActivity{
 
     private ViewPager mViewPager;
     private TabLayout tabLayout;
@@ -53,29 +44,9 @@ public class MainActivity extends AppCompatActivity {
             tabLayout.getTabAt(i).setIcon(icons[i]);
         }
 
-        /*ImageView img = (ImageView)findViewById(R.id.imagelinkedin2);
-        img.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                String url = (String)v.getTag();
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse(url));
-                startActivity(intent);
-            }
-        });*/
-
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-
-      /*  findViewById(R.id.imageEmail2).setOnClickListener(new OnClickListener() {
-            public void onClick(View _) {
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.fromParts("mailto","abc@gmail.com", null));
-                startActivity(i);
-            }
-        });*/
     }
 
     @Override
