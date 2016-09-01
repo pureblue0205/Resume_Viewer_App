@@ -9,218 +9,114 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/reference_title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fadeScrollbars="false">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="REFERENCES"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
-        <!--Try vertical LinearLayout-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@mipmap/ic_nel" />
 
             <TextView
-                android:id="@+id/reference_title"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_below="@id/imageView1"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
                 android:gravity="center_horizontal"
-                android:text="REFERENCES"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="28sp"
-                android:textStyle="bold" />
+                android:text="Emmanuel Dioso\nTraffic Operation\nCity of Burlington" />
 
-            <RelativeLayout
+
+            <ImageView
+                android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/reference_title"
-                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="60dp"
-                android:gravity="center"
-                android:id="@+id/relativeLayout2">
+                android:src="@mipmap/ic_cho" />
 
-                <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:src="@mipmap/ic_reference1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView1"
-                    android:layout_centerInParent="true"
-                    android:gravity="center"
-                    android:text="Emmanuel Dioso\n???\nCity of Burlington" />
-            </RelativeLayout>
-
-            <RelativeLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:gravity="center"
-                android:id="@+id/relativeLayout"
-                android:layout_alignTop="@+id/relativeLayout2"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="30dp">
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:src="@mipmap/ic_jin" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView2"
-                    android:layout_centerInParent="true"
-                    android:gravity="center"
-                    android:text="Jin Kim\nInformation Specialist\nMohawk College" />
-            </RelativeLayout>
+                android:text="Seungbin Cho\nHRD research\nHures consulting Co." />
 
 
-            <RelativeLayout
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/linear_left"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/reference_title"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="260dp"
-                android:gravity="center">
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_jin" />
 
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:src="@mipmap/ic_cho" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView3"
-                    android:layout_centerInParent="true"
-                    android:gravity="center"
-                    android:text="Seungbin Cho\nHRD research\nHures consulting Co." />
-            </RelativeLayout>
-
-            <RelativeLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/imageView1"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Jin Kim\nInfo. Management\nMohawk College" />
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:src="@mipmap/ic_haji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:gravity="center"
-                android:layout_alignParentBottom="true"
-                android:layout_alignRight="@+id/relativeLayout"
-                android:layout_alignEnd="@+id/relativeLayout"
-                android:layout_marginRight="25dp"
-                android:layout_marginEnd="25dp">
+                android:text="Jieun Ha\nBX designer\nMakeus Co." />
 
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_reference1"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true" />
+        </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView4"
-                    android:layout_centerInParent="true"
-                    android:gravity="center"
-                    android:text="Jieun Ha\nBX designer\nMakeus Co." />
-            </RelativeLayout>
-            <!--<ImageView-->
-            <!--android:id="@+id/imageView1"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@id/reference_title"-->
-            <!--android:layout_marginLeft="60dp"-->
-            <!--android:layout_marginTop="60dp"-->
-            <!--android:src="@mipmap/ic_jin" />-->
-
-            <!--<ImageView-->
-            <!--android:id="@+id/imageView2"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@id/reference_title"-->
-            <!--android:layout_marginLeft="250dp"-->
-            <!--android:layout_marginTop="60dp"-->
-            <!--android:src="@mipmap/ic_reference1" />-->
-
-
-            <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-
-            <!--android:layout_below="@id/reference_title"-->
-            <!--android:layout_marginTop="120dp"-->
-
-            <!--android:gravity="center"-->
-            <!--android:text="Jin Kim\nMohawk College"/>-->
-
-            <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@id/reference_title"-->
-            <!--android:layout_marginLeft="200dp"-->
-            <!--android:layout_marginTop="120dp"-->
-
-            <!--android:gravity="center"-->
-            <!--android:text="Emmanuel Dioso\nCity of Burlington" />-->
-
-            <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<ImageView-->
-            <!--android:id="@+id/imageView3"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="60dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:src="@mipmap/ic_reference1" />-->
-
-            <!--<ImageView-->
-            <!--android:id="@+id/imageView4"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="60dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:src="@mipmap/ic_cho" />-->
-
-            <!--</LinearLayout>-->
-
-            <!--<RelativeLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:gravity="center"-->
-            <!--android:text="  Jieun Ha  \n???   " />-->
-
-            <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:gravity="center"-->
-            <!--android:text="Seungbin Cho\nProfessor" />-->
-            <!--</RelativeLayout>-->
-        </RelativeLayout>
-    </ScrollView>
-
+    </RelativeLayout>
 
 </LinearLayout>
