@@ -3,20 +3,35 @@ package a16sapi.aidle.minyuresume;
 
 import android.os.Bundle;
 import android.net.Uri;
+import android.os.Handler;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v4.view.ViewPager;
+import android.widget.Toast;
+
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+
+/**
+ * Created MainActivity to handle several displays
+ *
+ * Revised by Pureblue on 8/31/16.
+ *
+ */
 
 public class MainActivity extends AppCompatActivity{
 
     private ViewPager mViewPager;
     private TabLayout tabLayout;
     private GoogleApiClient client;
+    private Boolean exit = false;
+    final private int three_sec= 3*1000;
 
+    /**
+     * OnCreate method renders all icons, tabs, and slide views
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -89,4 +104,23 @@ public class MainActivity extends AppCompatActivity{
         client.disconnect();
     }
 
+    /**
+     * If user try to exit using 'back' button, app asks to do so within 3 secs
+     */
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Press 'Back' again to exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            },three_sec);
+        }
+    }
 }

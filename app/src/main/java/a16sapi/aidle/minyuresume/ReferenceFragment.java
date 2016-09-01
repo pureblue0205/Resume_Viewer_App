@@ -6,13 +6,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ReferenceActivity extends Fragment {
+/**
+ * A fragment class for Reference tab
+ *
+ * Created by Pureblue on 8/25/16.
+ *
+ */
 
+public class ReferenceFragment extends Fragment {
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.reference, container, false);
-        return rootView;
+        View view =  inflater.inflate(R.layout.reference, container, false);
+        return view;
 
     }
 }

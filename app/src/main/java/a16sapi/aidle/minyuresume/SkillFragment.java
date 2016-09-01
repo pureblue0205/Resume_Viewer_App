@@ -6,16 +6,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 /**
+ * A fragment class for Skill tab
+ *
  * Created by Pureblue on 8/25/16.
+ *
  */
-public class EducationActivity extends Fragment{
+public class SkillFragment extends Fragment{
 
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.education, container, false);
-        return rootView;
+        View view =  inflater.inflate(R.layout.skill, container, false);
+        return view;
     }
 }

@@ -9,7 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class HomeActivity extends Fragment implements View.OnClickListener {
+/**
+ * It renders HomeFragment with icons having hyperlinks
+ *
+ * Revised by Pureblue on 8/25/16.
+ */
+
+public class HomeFragment extends Fragment implements View.OnClickListener {
 
     private ImageView phone,email,linkedIn;
     final private String phoneNumber = "+821099170524";
@@ -31,6 +37,11 @@ public class HomeActivity extends Fragment implements View.OnClickListener {
         return view;
     }
 
+    /**
+     * User clicks icons; they correspond with proper pages to load
+     *
+     * Revised by Pureblue on 8/25/16.
+     */
     @Override
     public void onClick(View v){
         switch(v.getId()){
